@@ -33,6 +33,7 @@ msg.api_key = "123"; // required
 msg.user_id = "xyz"; // required
 msg.intent = "test";
 msg.version = "0.1";
+msg.platform = "Generic API";
 msg.content = "This is a test.";
 msg.type = Chatbase.Message.UserMessage; // default, required
 msg.not_handled = false; // default
@@ -56,6 +57,7 @@ agnMsg.SetMessageID("456");
 agnMsg.SetMessageContent("hey");
 agnMsg.intent = "say-hello";
 agnMsg.version = "0.2";
+agnMsg.platform = "Facebook API";
 var firstTask = client.Send(agnMsg);
 
 // User messages
